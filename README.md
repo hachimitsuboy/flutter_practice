@@ -1,16 +1,13 @@
-# static_analysis
 
-A new Flutter project.
+## Flutterの基礎練習
 
-## Getting Started
+## 5/1~5/2
+・静的解析の導入
+→標準で入れられているflutter_lintsによって、ビルド開始前にプログラミングの文法間違い（プログラムは動くけど、厳しめにいうとこんな風に書く）を教えてくれる。
+今回のプログラムではhome_screenでは、lintsに記載されているルールに従わずに、普段自分が書いている流れで書いた。home_screen2ではlintsに記載されているルールに基づきプログラムを書いた。簡単なカウントアップアプリだったためか、ほとんどはconstのつけ忘れの警告だけだった.
 
-This project is a starting point for a Flutter application.
+const:コンパイル段階で値が決定され、代入などができない
+final:コンパイル段階では決定していないが、ビルド段階で決定する
 
-A few resources to get you started if this is your first Flutter project:
+# 定するタイミングが違うことで、どんな違いがあるのかよくわからなかった
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
