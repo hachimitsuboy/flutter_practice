@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:static_analysis/home_screen2.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -14,7 +15,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("静的解析"),
+        title: Text("静的解析前"),
         centerTitle: true,
       ),
       body: Container(
@@ -23,6 +24,9 @@ class _HomeScreenState extends State<HomeScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text("押された回数: $count"),
+              SizedBox(
+                height: 20,
+              ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   shape: CircleBorder(),
@@ -33,6 +37,19 @@ class _HomeScreenState extends State<HomeScreen> {
                   });
                 },
                 child: Icon(Icons.refresh),
+              ),
+              SizedBox(
+                height: 300,
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => HomeScreen2(),
+                      ));
+                },
+                child: Text("静的解析された画面へ"),
               ),
             ],
           ),
