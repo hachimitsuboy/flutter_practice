@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:static_analysis/home_screen2.dart';
+import 'package:static_analysis/screens/home_screen2.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);

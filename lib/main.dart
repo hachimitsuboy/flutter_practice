@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:static_analysis/home_screen2.dart';
+import 'package:static_analysis/screens/home_screen2.dart';
+import 'package:static_analysis/screens/stream_screen.dart';
 
-import 'home_screen.dart';
+import 'screens/home_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,7 +14,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "static_analysis",
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: const StreamScreen(),
     );
   }
 }
